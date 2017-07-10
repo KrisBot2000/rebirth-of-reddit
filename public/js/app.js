@@ -57,6 +57,16 @@ console.log(myBoardsObj);
 //RANDOM DIV
 startXHR(HTTP_METHOD.GET, broadCityUrl, myBoardsListener);
 
+function myBoardsListener() {
+let myBoardsObj = JSON.parse(this.responseText);
+console.log('BROAD CITY OBJ:');
+console.log(myBoardsObj);
+//let urlDiv = document.createElement('div');
+
+
+
+}
+
 let randomDiv = document.createElement('div');
 randomDiv.innerHTML = `<a href="HTTP://WWW.google.com">click me</a>`;
 document.body.appendChild(randomDiv);
